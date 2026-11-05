@@ -123,7 +123,7 @@
                     if (next) location.href = root + next; else renderAccount();
                 } else if (mode === "up") {
                     const r = await sb.auth.signUp({ email: email.value.trim(), password: password.value, options: { data: { display_name: name.value.trim() }, emailRedirectTo: new URL(root + "account/index.html", location.href).href } });
-                    if (r.error) throw new Error(/rate limit/i.test(r.error.message) ? "Too many sign-ups right now. Please try again later." : /password/i.test(r.error.message) ? "Choose a stronger password of at least 8 characters." : "That account could not be created. Check the email address and try again.");
+                    if (r.error) throw new Error(/already registered|already exists/i.test(r.error.message) ? "This email already has an account. Press \"I have an account\" below to sign in." : /sending.*email|email.*sending/i.test(r.error.message) ? "The confirmation email could not be sent. Please try again later." : /rate limit/i.test(r.error.message) ? "Too many sign-ups right now. Please try again later." : /password/i.test(r.error.message) ? "Choose a stronger password of at least 8 characters." : "That account could not be created. Check the email address and try again.");
                     await loadMe();
                     if (me) { const next = nextPage(); if (next) location.href = root + next; else renderAccount(); }
                     else { note.textContent = "Check your email and press the link in it to finish. It may take a minute."; note.hidden = false; }
