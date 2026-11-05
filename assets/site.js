@@ -29,7 +29,7 @@
     function find(text) {
         const words = text.toLowerCase().split(/\s+/).filter(Boolean);
         const has = (hay) => words.every(w => hay.includes(w));
-        if (!words.length) return HUB_INDEX.filter(h => h.group === "Go to");
+        if (!words.length) return HUB_INDEX.filter(h => h.group !== "Tools");
         const named = HUB_INDEX.filter(h => has(h.title.toLowerCase()));
         const described = HUB_INDEX.filter(h => !named.includes(h) && h.text && has(h.text));
         return [...named, ...described].slice(0, 14);

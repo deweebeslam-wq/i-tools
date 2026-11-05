@@ -7,7 +7,9 @@
 <meta name="description" content="Choose what to export (categories; networks, surfaces, blocks by name; layers / layer filter / layer state; or picked on screen), then export NWC, IFC or both">
 <script>try{var r=document.documentElement;r.dataset.theme=localStorage.getItem("hub-theme")==="light"?"light":"dark";r.dataset.sidebar=localStorage.getItem("hub-sidebar")==="rail"?"rail":"full"}catch(e){}</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233FD4E6' stroke-width='2'%3E%3Cpath d='M12 2.5 20.5 7v10L12 21.5 3.5 17V7z'/%3E%3C/svg%3E">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://txjxjsvooylhrmlyvlwe.supabase.co wss://txjxjsvooylhrmlyvlwe.supabase.co; base-uri 'none'; form-action 'self'">
 <link rel="stylesheet" href="../../assets/app.css">
+<link rel="stylesheet" href="../../assets/live.css">
 </head>
 <body>
 <div class="shell">
@@ -16,6 +18,7 @@
 <nav class="nav-group" aria-label="Main">
 <a href="../../index.html" title="Overview" class=""><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 2h5v5H2zM9 2h5v3H9zM9 7h5v7H9zM2 9h5v5H2z"/></svg><span class="nav-label">Overview</span></a>
 <a href="../../tools/index.html" title="Tools" class="active" aria-current="page"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10.5 2.5a3 3 0 0 0-3 4L2.5 11.5l2 2 5-5a3 3 0 0 0 4-3l-2 2-2-1-1-2z"/></svg><span class="nav-label">Tools</span></a>
+<a href="../../community/index.html" title="Community" class=""><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 7.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM1.5 13.5a4.5 4.5 0 0 1 9 0M10.5 7.5a2.5 2.5 0 0 0 0-5M12 9.5a4.5 4.5 0 0 1 2.5 4"/></svg><span class="nav-label">Community</span></a>
 <a href="../../releases/index.html" title="Releases" class=""><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 5 8 2l5.5 3v6L8 14l-5.5-3zM2.5 5 8 8l5.5-3M8 8v6"/></svg><span class="nav-label">Releases</span></a>
 </nav>
 <nav class="nav-group" aria-label="Product families">
@@ -24,10 +27,11 @@
 <a class="fam-navis " href="../../families/navis/index.html" title="i-Navis"><span class="nav-dot"></span><span class="nav-label">i-Navis</span></a>
 <a class="fam-civil " href="../../families/civil/index.html" title="i-Civil"><span class="nav-dot"></span><span class="nav-label">i-Civil</span></a>
 </nav>
-<nav class="nav-group" aria-label="Feedback">
-<span class="nav-title">Feedback on GitHub</span>
-<a href="https://github.com/deweebeslam-wq/i-tools/issues/new?template=bug_report.yml" rel="noopener" title="Report a bug"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5.5 5.5h5v5.5a2.5 2.5 0 0 1-5 0zM6 5.5a2 2 0 0 1 4 0M2.5 8h3M10.5 8h3M3 4l2.5 2M13 4l-2.5 2M3 13l2.5-2M13 13l-2.5-2"/></svg><span class="nav-label">Report a bug</span></a>
-<a href="https://github.com/deweebeslam-wq/i-tools/issues/new?template=feature_request.yml" rel="noopener" title="Suggest a feature"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5.5 11a4 4 0 1 1 5 0v1.5h-5zM6.5 14.5h3"/></svg><span class="nav-label">Suggest a feature</span></a>
+<nav class="nav-group" aria-label="Get involved">
+<span class="nav-title">Get involved</span>
+<a href="../../submit/index.html" title="Submit a request" class=""><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5.5 11a4 4 0 1 1 5 0v1.5h-5zM6.5 14.5h3"/></svg><span class="nav-label">Submit a request</span></a>
+<a href="../../report/index.html" title="Report a bug" class=""><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5.5 5.5h5v5.5a2.5 2.5 0 0 1-5 0zM6 5.5a2 2 0 0 1 4 0M2.5 8h3M10.5 8h3M3 4l2.5 2M13 4l-2.5 2M3 13l2.5-2M13 13l-2.5-2"/></svg><span class="nav-label">Report a bug</span></a>
+<a id="nav-team" hidden href="../../team/index.html" title="Team review" class=""><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 3h12L9.5 8.5V13l-3-1.5v-3z"/></svg><span class="nav-label">Team review</span></a>
 </nav>
 <div class="sidebar-foot"><button type="button" class="nav-collapse" data-hub="rail" title="Collapse or expand the sidebar" aria-label="Collapse or expand the sidebar"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 2.5h11v11h-11zM6 2.5v11M11 6 9 8l2 2"/></svg><span class="nav-label">Collapse sidebar</span></button></div>
 </aside>
@@ -37,6 +41,7 @@
 <button type="button" class="icon-button menu-button" data-hub="menu" aria-label="Open the menu"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12"/></svg></button>
 <button type="button" class="search-button" data-hub="palette" aria-haspopup="dialog"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="m10.5 10.5 3 3"/></svg><span>Search tools and pages</span><kbd>Ctrl K</kbd></button>
 <button type="button" class="icon-button" data-hub="theme" aria-label="Switch theme" title="Switch theme"><svg class="theme-icon-dark" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="theme-icon-light" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.5A6 6 0 0 1 6.5 2.5a6 6 0 1 0 7 7z"/></svg></button>
+<div id="auth-slot"><a class="button primary" href="../../account/index.html">Sign in</a></div>
 </header>
 <main class="page">
 <header class="page-head"><div><nav aria-label="Breadcrumb"><ol class="crumbs"><li><a href="../../tools/index.html">Tools</a></li><li aria-current="page">BIM Export</li></ol></nav><h1 class="wrap-any">BIM Export</h1></div></header><p class="card-tags" style="margin-top:-12px;margin-bottom:8px"><span class="status st-done"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="4.5" fill="currentColor" stroke="none"/><path d="m3.8 6.2 1.6 1.5 2.9-3" stroke="var(--surface)"/></svg> Released</span><span class="family fam-civil">i-Civil</span></p><p class="tool-lead" style="margin-bottom:20px">Choose what to export (categories; networks, surfaces, blocks by name; layers / layer filter / layer state; or picked on screen), then export NWC, IFC or both</p>
@@ -44,7 +49,7 @@
 <section class="panel prose"><h2>What it does</h2><p class="tool-text">One dialog, three tabs - Entity Selection &amp; Scope, NWC Settings, IFC BIM Settings - and a bar underneath for the output folder and file name, presets, and Export NWC, Export IFC and Batch Export Both. It replaces isolating objects by hand and typing NWCOUT / IFCEXPORT.</p><p class="tool-text">The usual shape: the drawing is read once into a snapshot before the dialog opens (every exportable model space object with its category, layer and owner; layers, layer filters, layer states; units; coordinate system; which exporters are installed). The dialog recounts the scope live on every click, says what each export button is waiting for, and the work happens after it closes.</p><h2>How to open it</h2><p class="tool-text">Click BIM Export on the i-CIVIL ribbon tab, or type ICIVILBIMEXPORT at the command line.</p></section>
 
 
-</div><aside><section class="panel"><h2>Summary</h2><dl class="facts"><div class="fact"><dt>Group</dt><dd>BIM Export</dd></div><div class="fact"><dt>Software</dt><dd>Civil 3D 2026</dd></div><div class="fact"><dt>Availability</dt><dd>Included in v1.9.0</dd></div></dl><div class="form-actions tool-actions"><a class="button primary" href="https://github.com/deweebeslam-wq/I-CIVIL-3D-Releases/releases/download/v1.9.0/iCIVIL-Setup-1.9.0.exe">Download i-Civil v1.9.0</a><a class="button" href="https://github.com/deweebeslam-wq/i-tools/issues/new?template=bug_report.yml&amp;tool=BIM+Export" rel="noopener">Report a bug</a><a class="button" href="https://github.com/deweebeslam-wq/i-tools/issues/new?template=feature_request.yml&amp;tool=BIM+Export" rel="noopener">Suggest an improvement</a></div><p class="help">Reports open on GitHub, need a GitHub account, and are public.</p></section>
+</div><aside><section class="panel"><h2>Summary</h2><dl class="facts"><div class="fact"><dt>Group</dt><dd>BIM Export</dd></div><div class="fact"><dt>Software</dt><dd>Civil 3D 2026</dd></div><div class="fact"><dt>Availability</dt><dd>Included in v1.9.0</dd></div></dl><div class="form-actions tool-actions"><a class="button primary" href="https://github.com/deweebeslam-wq/I-CIVIL-3D-Releases/releases/download/v1.9.0/iCIVIL-Setup-1.9.0.exe">Download i-Civil v1.9.0</a><a class="button" href="../../report/index.html?tool=BIM%20Export">Report a bug</a><a class="button" href="../../submit/index.html?tool=BIM+Export&amp;kind=Improvement">Suggest an improvement</a></div></section>
 <section class="panel"><h2>Related tools</h2><ul class="plain-list"><li><a href="../export-nwc/index.html">Export NWC</a></li><li><a href="../export-ifc/index.html">Export IFC</a></li></ul></section>
 
 </aside></div>
@@ -58,5 +63,8 @@
 </dialog>
 <script src="../../assets/search-index.js"></script>
 <script src="../../assets/site.js"></script>
+<script src="../../assets/supabase-config.js"></script>
+<script src="../../assets/supabase.js"></script>
+<script src="../../assets/live.js"></script>
 </body>
 </html>

@@ -1,0 +1,19 @@
+/* Only what the interactive pages add to the shared design. */
+.topbar .search-button { margin-right: auto; }
+/* A long name must shrink the search box, not widen the page. */
+.topbar .search-button { min-width: 0; }
+#auth-slot { display: flex; flex: none; }
+#auth-slot .button { max-width: 180px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; display: inline-block; line-height: 18px; }
+.live-status::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: currentColor; flex: none; }
+.live-private { color: var(--s-building); border-color: currentColor; margin-left: 8px; white-space: normal; }
+.live-team { color: var(--accent); border-color: currentColor; margin-left: 6px; }
+.live-tags { margin: -12px 0 16px; }
+.form-account { max-width: 440px; }
+.account-links { display: flex; flex-wrap: wrap; gap: 4px 12px; margin: 16px 0 0; }
+.account-links .link-button { padding: 0; }
+.comment .link-button { margin-left: 8px; font-size: 12.5px; }
+.rows select { font: inherit; color: var(--text); background: var(--bg); border: 1px solid var(--line-2); border-radius: var(--r-control); height: 32px; padding: 0 6px; }
+.form-part:first-of-type { padding-top: 8px; }
+.form-sheet > .hint { margin-top: 12px; }
+#auth-slot .button:hover { text-decoration: none; }
+@media (max-width: 900px) { #auth-slot .button { max-width: 110px; } }
