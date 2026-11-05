@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" data-theme="dark" data-sidebar="full" data-root="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>i-CLASH REPORT PRO | i-Tools</title>
+<meta name="description" content="Turns Clash Detective results into a client-ready PDF report, an interactive HTML dashboard and, optionally, the Navisworks-format XML and tabular HTML. You control exactly which clashes go in, filtering down to a single parameter value such as Zone 3.">
+<script>try{var r=document.documentElement;r.dataset.theme=localStorage.getItem("hub-theme")==="light"?"light":"dark";r.dataset.sidebar=localStorage.getItem("hub-sidebar")==="rail"?"rail":"full"}catch(e){}</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233FD4E6' stroke-width='2'%3E%3Cpath d='M12 2.5 20.5 7v10L12 21.5 3.5 17V7z'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../../assets/app.css">
+</head>
+<body>
+<div class="shell">
+<aside class="sidebar" aria-label="Sections">
+<a class="brand" href="../../index.html" title="i-Tools"><svg class="brand-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 2.5 20.5 7v10L12 21.5 3.5 17V7z"/><path d="M12 12v9.5M3.8 7.2 12 12l8.2-4.8"/></svg><span class="brand-text">i-Tools</span></a>
+<nav class="nav-group" aria-label="Main">
+<a href="../../index.html" title="Overview" class=""><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 2h5v5H2zM9 2h5v3H9zM9 7h5v7H9zM2 9h5v5H2z"/></svg><span class="nav-label">Overview</span></a>
+<a href="../../tools/index.html" title="Tools" class="active" aria-current="page"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10.5 2.5a3 3 0 0 0-3 4L2.5 11.5l2 2 5-5a3 3 0 0 0 4-3l-2 2-2-1-1-2z"/></svg><span class="nav-label">Tools</span></a>
+<a href="../../releases/index.html" title="Releases" class=""><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 5 8 2l5.5 3v6L8 14l-5.5-3zM2.5 5 8 8l5.5-3M8 8v6"/></svg><span class="nav-label">Releases</span></a>
+</nav>
+<nav class="nav-group" aria-label="Product families">
+<span class="nav-title">Product families</span>
+<a class="fam-revit " href="../../families/revit/index.html" title="i-Tools for Revit"><span class="nav-dot"></span><span class="nav-label">i-Tools for Revit</span></a>
+<a class="fam-navis " href="../../families/navis/index.html" title="i-Navis"><span class="nav-dot"></span><span class="nav-label">i-Navis</span></a>
+<a class="fam-civil " href="../../families/civil/index.html" title="i-Civil"><span class="nav-dot"></span><span class="nav-label">i-Civil</span></a>
+</nav>
+<div class="sidebar-foot"><button type="button" class="nav-collapse" data-hub="rail" title="Collapse or expand the sidebar" aria-label="Collapse or expand the sidebar"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 2.5h11v11h-11zM6 2.5v11M11 6 9 8l2 2"/></svg><span class="nav-label">Collapse sidebar</span></button></div>
+</aside>
+<button type="button" class="scrim" data-hub="close-menu" aria-label="Close the menu"></button>
+<div class="workspace">
+<header class="topbar">
+<button type="button" class="icon-button menu-button" data-hub="menu" aria-label="Open the menu"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12"/></svg></button>
+<button type="button" class="search-button" data-hub="palette" aria-haspopup="dialog"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="m10.5 10.5 3 3"/></svg><span>Search tools and pages</span><kbd>Ctrl K</kbd></button>
+<button type="button" class="icon-button" data-hub="theme" aria-label="Switch theme" title="Switch theme"><svg class="theme-icon-dark" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="theme-icon-light" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.5A6 6 0 0 1 6.5 2.5a6 6 0 1 0 7 7z"/></svg></button>
+</header>
+<main class="page">
+<header class="page-head"><div><nav aria-label="Breadcrumb"><ol class="crumbs"><li><a href="../../tools/index.html">Tools</a></li><li aria-current="page">i-CLASH REPORT PRO</li></ol></nav><h1 class="wrap-any">i-CLASH REPORT PRO</h1></div></header><p class="card-tags" style="margin-top:-12px;margin-bottom:8px"><span class="status st-done"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="4.5" fill="currentColor" stroke="none"/><path d="m3.8 6.2 1.6 1.5 2.9-3" stroke="var(--surface)"/></svg> Released</span><span class="family fam-navis">i-Navis</span></p><p class="tool-lead" style="margin-bottom:20px">Turns Clash Detective results into a client-ready PDF report, an interactive HTML dashboard and, optionally, the Navisworks-format XML and tabular HTML. You control exactly which clashes go in, filtering down to a single parameter value such as Zone 3.</p>
+<div class="detail-grid"><div>
+<section class="panel prose"><h2>How to open it</h2><p class="tool-text">Click i-CLASH REPORT PRO in the Clash Reporting on the i-TOOLS ribbon tab in Navisworks.</p></section>
+
+<section class="panel"><h2>Features</h2><ul class="feature-list"><li>Clash source - Any clash test, or all tests at once. Clash Detective folders and result groups are read, and group names are kept.</li><li>Export scope - Filtered results, Checked clashes (ticked in the list), or Navisworks selection (clashes whose two items are selected, e.g. after picking results in Clash Detective).</li><li>Filters - Status (incl. &quot;Open&quot;), clash type, discipline, severity, level, include/exclude resolved.</li><li>Parameter filter - Filter by any element parameter of the clashing items, e.g. a Revit Zone parameter: pick *Zone*, then *Zone 3*, and only the clashes in Zone 3 remain. Parameters are found on the clash elements automatically, and one named &quot;Zone&quot; is preselected. *Match on* sets which item must have the value: Item A or Item B, both items, only Item A, or only Item B. The values show in a grid column and in the reports, and Select shown items selects every clashing element of the listed clashes in Navisworks.</li><li>Global search - Searches clash name, element name/type/category/family, model, layer, level, zone, system, element ID, GUID, coordinates, comments, and more. Every term must match, and &quot;quoted phrases&quot; are supported.</li><li>Severity rules - Configurable. Hard clashes are rated by penetration depth (defaults Critical ≥ 100 mm, High ≥ 50, Medium ≥ 25, else Low). Clearance clashes are rated by remaining gap (defaults Critical &lt; 25 mm, High &lt; 50, Medium &lt; 100, else Low). You set the severity used for duplicates.</li><li>Disciplines - Derived by keyword rules from the model file name, category, system and name (Structural, Mechanical, Plumbing, Electrical, Fire Protection, Architectural, Civil). The rules are editable.</li><li>Analytics - KPIs, coordination health score, charts by status, severity, discipline, discipline pair, level (ordered by elevation), test and model, a level × severity heatmap, a discipline A × B matrix, similar-clash groups, and auto-generated key findings.</li><li>Clash images - Per clash: a 3D view framed from front-right-top and an optional plan view. Item A and Item B are coloured. Around them the image shows only the elements within the zoom radius, ghosted (*Around the clash show*: nearby elements, only Item A and Item B, or the whole model). Everything else is hidden just for the capture and shown again afterwards. Markup is added (clash number, severity, marker ring, distance callout, A/B legend, coordinates). Alternatively, use the Clash Detective viewpoint image.</li><li>PDF report - Cover, contents with page numbers, executive summary, statistics, levels/tests/models, heatmap, similar groups, clash list, one or two clash detail pages per clash, model information, methodology and revision history. Every section can be switched on or off. Page sizes: A4, A3, Letter or custom, portrait or landscape.</li><li>HTML dashboard - A single offline file with overview, clash cards/table, statistics, heatmap, groups, and models &amp; method. It has live filters and search, drill-down from charts, a clash detail viewer (keyboard ←/→/Esc), CSV export and print.</li><li>Navisworks XML &amp; HTML - Optional template outputs in the Navisworks formats. The Navisworks XML is the Clash Detective XML report layout: tests, summary, results with clash point, level, dates, items with Element ID, layer, path and smart tags, plus comments. The Navisworks HTML is the tabular report, one row per clash with its image and both items. Both contain only the clashes in the export scope, so every filter applies (e.g. only Zone 3). Images go to a &lt;report&gt;_files folder beside them.</li><li>Templates - Named templates hold branding (logos, colours, fonts, header/footer), sections, page layout, rules, images and output options. You can create, duplicate, rename, delete, import and export them.</li><li>Project info - Project name/number, client, contractor, consultant, prepared/checked/approved by, revision, stage, notes and revision history. Remembered per Navisworks file.</li><li>File naming - Token pattern, e.g. {Project}_ClashReport_{ClashTest}_Rev{Revision}_{Date}. Tokens: {Project} {ProjectNumber} {ClashTest} {Revision} {Date} {Time} {Status} {Discipline} {Client} {Template} {Count}.</li><li>Preview &amp; check - Estimated pages, images and charts, the section list, and a report quality check (missing project info or logos, clashes without properties or level, output folder, PDF engine, files that will be overwritten). &quot;Open layout preview&quot; shows the paged report in the browser without capturing images.</li><li>Batch / automation - A hidden add-in command for scripted or scheduled reporting (see below).</li></ul></section>
+</div><aside><section class="panel"><h2>Summary</h2><dl class="facts"><div class="fact"><dt>Group</dt><dd>Clash Reporting</dd></div><div class="fact"><dt>Software</dt><dd>Navisworks Manage and Simulate 2024-2027</dd></div><div class="fact"><dt>Availability</dt><dd>Included in v1.8.1</dd></div></dl><div class="form-actions tool-actions"><a class="button primary" href="https://github.com/deweebeslam-wq/I-TOOLS-NAVIS-Releases/releases/download/v1.8.1/iTools_Navisworks_Setup_1.8.1.exe">Download i-Navis v1.8.1</a></div></section>
+
+
+</aside></div>
+</main>
+</div>
+</div>
+<dialog class="palette" id="palette" aria-label="Search">
+<input id="palette-input" class="palette-input" type="text" placeholder="Search tools and pages" autocomplete="off" role="combobox" aria-expanded="true" aria-controls="palette-list" aria-label="Search">
+<ul id="palette-list" class="palette-list" role="listbox" aria-label="Results"></ul>
+<div class="palette-foot"><span><kbd>Up</kbd> <kbd>Down</kbd> to move</span><span><kbd>Enter</kbd> to open</span><span><kbd>Esc</kbd> to close</span></div>
+</dialog>
+<script src="../../assets/search-index.js"></script>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

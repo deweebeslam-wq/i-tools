@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" data-theme="dark" data-sidebar="full" data-root="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create Types | i-Tools</title>
+<meta name="description" content="Create, edit, bulk-build, import/export and audit family types — loadable and system families.">
+<script>try{var r=document.documentElement;r.dataset.theme=localStorage.getItem("hub-theme")==="light"?"light":"dark";r.dataset.sidebar=localStorage.getItem("hub-sidebar")==="rail"?"rail":"full"}catch(e){}</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233FD4E6' stroke-width='2'%3E%3Cpath d='M12 2.5 20.5 7v10L12 21.5 3.5 17V7z'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../../assets/app.css">
+</head>
+<body>
+<div class="shell">
+<aside class="sidebar" aria-label="Sections">
+<a class="brand" href="../../index.html" title="i-Tools"><svg class="brand-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 2.5 20.5 7v10L12 21.5 3.5 17V7z"/><path d="M12 12v9.5M3.8 7.2 12 12l8.2-4.8"/></svg><span class="brand-text">i-Tools</span></a>
+<nav class="nav-group" aria-label="Main">
+<a href="../../index.html" title="Overview" class=""><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 2h5v5H2zM9 2h5v3H9zM9 7h5v7H9zM2 9h5v5H2z"/></svg><span class="nav-label">Overview</span></a>
+<a href="../../tools/index.html" title="Tools" class="active" aria-current="page"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10.5 2.5a3 3 0 0 0-3 4L2.5 11.5l2 2 5-5a3 3 0 0 0 4-3l-2 2-2-1-1-2z"/></svg><span class="nav-label">Tools</span></a>
+<a href="../../releases/index.html" title="Releases" class=""><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 5 8 2l5.5 3v6L8 14l-5.5-3zM2.5 5 8 8l5.5-3M8 8v6"/></svg><span class="nav-label">Releases</span></a>
+</nav>
+<nav class="nav-group" aria-label="Product families">
+<span class="nav-title">Product families</span>
+<a class="fam-revit " href="../../families/revit/index.html" title="i-Tools for Revit"><span class="nav-dot"></span><span class="nav-label">i-Tools for Revit</span></a>
+<a class="fam-navis " href="../../families/navis/index.html" title="i-Navis"><span class="nav-dot"></span><span class="nav-label">i-Navis</span></a>
+<a class="fam-civil " href="../../families/civil/index.html" title="i-Civil"><span class="nav-dot"></span><span class="nav-label">i-Civil</span></a>
+</nav>
+<div class="sidebar-foot"><button type="button" class="nav-collapse" data-hub="rail" title="Collapse or expand the sidebar" aria-label="Collapse or expand the sidebar"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 2.5h11v11h-11zM6 2.5v11M11 6 9 8l2 2"/></svg><span class="nav-label">Collapse sidebar</span></button></div>
+</aside>
+<button type="button" class="scrim" data-hub="close-menu" aria-label="Close the menu"></button>
+<div class="workspace">
+<header class="topbar">
+<button type="button" class="icon-button menu-button" data-hub="menu" aria-label="Open the menu"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12"/></svg></button>
+<button type="button" class="search-button" data-hub="palette" aria-haspopup="dialog"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="m10.5 10.5 3 3"/></svg><span>Search tools and pages</span><kbd>Ctrl K</kbd></button>
+<button type="button" class="icon-button" data-hub="theme" aria-label="Switch theme" title="Switch theme"><svg class="theme-icon-dark" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="theme-icon-light" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.5A6 6 0 0 1 6.5 2.5a6 6 0 1 0 7 7z"/></svg></button>
+</header>
+<main class="page">
+<header class="page-head"><div><nav aria-label="Breadcrumb"><ol class="crumbs"><li><a href="../../tools/index.html">Tools</a></li><li aria-current="page">Create Types</li></ol></nav><h1 class="wrap-any">Create Types</h1></div></header><p class="card-tags" style="margin-top:-12px;margin-bottom:8px"><span class="status st-done"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="4.5" fill="currentColor" stroke="none"/><path d="m3.8 6.2 1.6 1.5 2.9-3" stroke="var(--surface)"/></svg> Released</span><span class="family fam-revit">i-Tools for Revit</span></p><p class="tool-lead" style="margin-bottom:20px">Create, edit, bulk-build, import/export and audit family types — loadable and system families.</p>
+<div class="detail-grid"><div>
+<section class="panel prose"><h2>What it does</h2><p class="tool-text">Smart Type Generator is a general-purpose type-management workbench: create new types (one-by-one, bulk-pasted, or by generating every combination across dimension ranges), edit/duplicate/rename/delete existing types, compare types side by side, audit a family for near-duplicates, and round-trip type data through Excel (export, import, and sync-compare against a spreadsheet). It works on both loadable families and system families (walls, floors, etc.).</p><h2>When to use it</h2><p class="tool-text">Building a full catalogue of section sizes for a structural family from a size list, keeping project types in sync with an Excel type schedule, bulk-renaming or bulk-deleting types, auditing a family for accidental duplicate/near-duplicate types, or duplicating an existing type as the starting point for a new one.</p><h2>How to open it</h2><p class="tool-text">Click Modeling Tools → Create Types on the ribbon.</p></section>
+
+<section class="panel"><h2>Features</h2><ul class="feature-list"><li><details><summary>Left panel</summary><ul class="feature-list"><li>Category list — Chooses the category to work in</li><li>Refresh (↻) — Re-reads categories from the active project</li><li>Family combo — Chooses the loadable family or system entry within the category</li><li>Defining Parameters — Ticks which parameters make a type unique</li><li>Audit — Scans the family for duplicate dimensions empty values and near-duplicate names</li><li>Name Template — Builds new type names from tokens</li><li>Reusable templates — Saves/loads/deletes a named setup of params+naming+maps+ranges+constants</li></ul></details></li><li><details><summary>Right panel</summary><ul class="feature-list"><li>Existing types grid — Lists current types with tick column and defining-value summary</li><li>Duplicate → editor — Prefills bulk area from one ticked type</li><li>Compare — Produces a side-by-side parameter diff of ticked types</li><li>Export Excel — Writes existing types to a workbook</li><li>Import Excel — Loads types from a workbook into the bulk area</li><li>Sync Excel — Compares a workbook against project types</li><li>Type filter — Filters the existing types grid</li></ul></details></li><li><details><summary>Bulk create</summary><ul class="feature-list"><li>Ranges → generate combinations — Builds every combination across parameter ranges</li><li>Parameter mapping — Aliases a bulk column header to a real family parameter</li><li>Constants — Applies a fixed value to every created/updated type</li><li>Bulk text box — Free text one type per line columns=ticked params</li><li>Rename ticked (Find/Replace) — Renames ticked existing types by text substitution</li><li>Delete — Deletes ticked existing types</li><li>Update existing on name match — Controls whether Create also updates same-named types</li></ul></details></li><li><details><summary>Preview</summary><ul class="feature-list"><li>Live preview list — Shows names that will be created/updated</li></ul></details></li><li><details><summary>Report</summary><ul class="feature-list"><li>Report grid — Shows Type/Status/Message from the last operation</li></ul></details></li><li><details><summary>Footer</summary><ul class="feature-list"><li>Validate — Dry-checks the current bulk request without writing</li><li>Create / Update — Writes types to the model</li></ul></details></li></ul></section>
+</div><aside><section class="panel"><h2>Summary</h2><dl class="facts"><div class="fact"><dt>Group</dt><dd>Modeling</dd></div><div class="fact"><dt>Software</dt><dd>Revit 2022-2027</dd></div><div class="fact"><dt>Availability</dt><dd>Included in v3.14.0</dd></div></dl><div class="form-actions tool-actions"><a class="button primary" href="https://github.com/deweebeslam-wq/I-TOOLS-Releases/releases/download/v3.14.0/I-TOOLS_Setup_v3.14.0.exe">Download i-Tools for Revit v3.14.0</a></div></section>
+<section class="panel"><h2>Related tools</h2><ul class="plain-list"><li><a href="../smart-repeat/index.html">Smart Repeat</a></li><li><a href="../split-types/index.html">Split Types</a></li><li><a href="../lintels/index.html">Lintels</a></li><li><a href="../create-levels/index.html">Create Levels</a></li><li><a href="../cad-blocks-families/index.html">CAD Blocks → Families</a></li></ul></section>
+<section class="panel"><h2>Keywords</h2><div class="card-tags"><span class="tag">Types</span><span class="tag">Families</span><span class="tag">Create</span><span class="tag">Bulk</span><span class="tag">Import</span><span class="tag">Export</span><span class="tag">Audit</span><span class="tag">Type Generator</span></div></section>
+</aside></div>
+</main>
+</div>
+</div>
+<dialog class="palette" id="palette" aria-label="Search">
+<input id="palette-input" class="palette-input" type="text" placeholder="Search tools and pages" autocomplete="off" role="combobox" aria-expanded="true" aria-controls="palette-list" aria-label="Search">
+<ul id="palette-list" class="palette-list" role="listbox" aria-label="Results"></ul>
+<div class="palette-foot"><span><kbd>Up</kbd> <kbd>Down</kbd> to move</span><span><kbd>Enter</kbd> to open</span><span><kbd>Esc</kbd> to close</span></div>
+</dialog>
+<script src="../../assets/search-index.js"></script>
+<script src="../../assets/site.js"></script>
+</body>
+</html>
