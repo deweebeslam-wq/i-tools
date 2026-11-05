@@ -1,0 +1,112 @@
+name: Report a bug
+description: Tell us about a tool that is not working as it should.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Everything you write here is public, and anyone can read it.** Do not include client names, project names, model files, or anything confidential. Check any screenshot before you add it.
+
+        Please search the open issues first, in case it has already been reported.
+  - type: dropdown
+    id: family
+    attributes:
+      label: Product family
+      options:
+        - i-Tools for Revit
+        - i-Navis
+        - i-Civil
+    validations:
+      required: true
+  - type: input
+    id: tool
+    attributes:
+      label: Affected tool
+      description: The name of the tool, as shown on the site.
+    validations:
+      required: true
+  - type: input
+    id: tool-version
+    attributes:
+      label: Tool version
+      placeholder: "3.14.0"
+    validations:
+      required: true
+  - type: input
+    id: software
+    attributes:
+      label: Software and version
+      placeholder: Revit 2025
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Bug category
+      options:
+        - Installation Issue
+        - UI/UX Issue
+        - Functionality Issue
+        - Performance Issue
+        - Compatibility Issue
+        - Data / Calculation Issue
+        - Crash / Exception
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: Blocker stops the work. Major has a painful workaround. Minor is a small problem. Cosmetic is only how it looks.
+      options:
+        - Blocker
+        - Major
+        - Minor
+        - Cosmetic
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What to click, in order, to make it happen again.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+      description: What should have happened.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      description: What happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: Error message
+      description: Paste the full text if an error appeared. Check that it shows no private file paths or names.
+      render: text
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshots
+      description: Drag images here. They become public too.
+  - type: checkboxes
+    id: public
+    attributes:
+      label: Public report
+      options:
+        - label: I understand this report is public, and it contains nothing confidential.
+          required: true
