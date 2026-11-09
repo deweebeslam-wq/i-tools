@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3A4560"/><stop offset="0.55" stop-color="#1B2338"/><stop offset="1" stop-color="#0E1424"/></linearGradient></defs>
+<rect x="8" y="8" width="496" height="496" rx="100" fill="url(#bg)" stroke="#55617F" stroke-opacity="0.55" stroke-width="2"/>
+<path d="M9,108 A100,100 0 0 1 108,8 H404 A100,100 0 0 1 503,108 V206 Q503,256 453,256 H59 Q9,256 9,206 Z" fill="#FFFFFF" opacity="0.045"/>
+<rect x="120" y="230" width="50" height="140" rx="4" fill="#3E2A7A" stroke="#EEF3FB" stroke-width="14" stroke-linejoin="round" /><rect x="330" y="230" width="50" height="140" rx="4" fill="#3E2A7A" stroke="#EEF3FB" stroke-width="14" stroke-linejoin="round" /><line x1="145" y1="140" x2="145" y2="216" stroke="#EEF3FB" stroke-width="10" stroke-linecap="round" /><line x1="355" y1="140" x2="355" y2="216" stroke="#EEF3FB" stroke-width="10" stroke-linecap="round" /><line x1="120" y1="172" x2="380" y2="172" stroke="#8B5CF6" stroke-width="12" stroke-linecap="round" /><line x1="132" y1="186" x2="158" y2="158" stroke="#EEF3FB" stroke-width="10" stroke-linecap="round" /><line x1="342" y1="186" x2="368" y2="158" stroke="#EEF3FB" stroke-width="10" stroke-linecap="round" />
+<g transform="translate(362,362)"><circle r="62" fill="#0D1322"/><circle r="53" fill="#8B5CF6"/><polygon points="6,-30 -20,6 -2,6 -8,30 20,-8 2,-8" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round"/></g>
+</svg>

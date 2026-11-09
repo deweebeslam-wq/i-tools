@@ -1,1 +1,0 @@
-window.HUB_CONFIG={"url":"https://txjxjsvooylhrmlyvlwe.supabase.co","key":"sb_publishable_P2bsiMw4IpUHM2mvN6UBqA_vKJMxyiH"};

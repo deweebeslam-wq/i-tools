@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3A4560"/><stop offset="0.55" stop-color="#1B2338"/><stop offset="1" stop-color="#0E1424"/></linearGradient></defs>
+<rect x="8" y="8" width="496" height="496" rx="100" fill="url(#bg)" stroke="#55617F" stroke-opacity="0.55" stroke-width="2"/>
+<path d="M9,108 A100,100 0 0 1 108,8 H404 A100,100 0 0 1 503,108 V206 Q503,256 453,256 H59 Q9,256 9,206 Z" fill="#FFFFFF" opacity="0.045"/>
+<path d="M150,140 H350 V170 H270 V320 H350 V350 H150 V320 H230 V170 H150 Z" fill="#0B4A55" stroke="#EEF3FB" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" /><line x1="110" y1="245" x2="390" y2="245" stroke="#06B6D4" stroke-width="10" stroke-linecap="round" stroke-dasharray="28 16"/><circle cx="110" cy="245" r="26" fill="#06B6D4" stroke="#EEF3FB" stroke-width="10" />
+<g transform="translate(362,362)"><circle r="62" fill="#0D1322"/><circle r="53" fill="#06B6D4"/><text x="0" y="2" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="800" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">2D</text></g>
+</svg>

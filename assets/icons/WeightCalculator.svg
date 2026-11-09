@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3A4560"/><stop offset="0.55" stop-color="#1B2338"/><stop offset="1" stop-color="#0E1424"/></linearGradient></defs>
+<rect x="8" y="8" width="496" height="496" rx="100" fill="url(#bg)" stroke="#55617F" stroke-opacity="0.55" stroke-width="2"/>
+<path d="M9,108 A100,100 0 0 1 108,8 H404 A100,100 0 0 1 503,108 V206 Q503,256 453,256 H59 Q9,256 9,206 Z" fill="#FFFFFF" opacity="0.045"/>
+<path d="M70,70 H330 V100 H215 V150 H330 V180 H70 V150 H185 V100 H70 Z" fill="#2A4A6B" stroke="#5DADE2" stroke-width="10" stroke-linejoin="round"/>
+<line x1="200" y1="184" x2="200" y2="236" stroke="#AAB4C8" stroke-width="10" stroke-linecap="round"/>
+<path d="M176,244 A24,24 0 1 1 224,244" fill="none" stroke="#EEF3FB" stroke-width="12" stroke-linecap="round"/>
+<path d="M120,258 H280 L326,440 Q330,456 314,456 H86 Q70,456 74,440 Z" fill="#EEF3FB"/>
+<text x="200" y="400" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-weight="bold" font-size="96" fill="#1B2338">kg</text>
+<g transform="translate(380,372)"><circle r="84" fill="#0D1322"/><circle r="74" fill="#5DADE2"/><text x="0" y="28" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-weight="bold" font-size="74" fill="#FFFFFF">kN</text></g>
+</svg>

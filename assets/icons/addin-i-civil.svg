@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- i-CIVIL mark, drawn for the website in the style of the Navisworks i-CLASH mark: navy tile,
+       white and light-blue line work, one accent. The orange is i-CIVIL's own ribbon accent (RibbonIcons.cs).
+       A pipe network in profile: the ground line, two manholes, and the pipe falling between them. -->
+  <rect x="8" y="8" width="240" height="240" rx="52" fill="#0B1F3A"/>
+  <path d="M34 86 C 70 66, 104 98, 136 84 S 196 62, 222 74" fill="none" stroke="#9EC5F4" stroke-width="10" stroke-linecap="round"/>
+  <path d="M84 166 L 174 188" fill="none" stroke="#D97B1E" stroke-width="24" stroke-linecap="round"/>
+  <rect x="58" y="78" width="30" height="104" rx="7" fill="#0B1F3A" stroke="#FFFFFF" stroke-width="10"/>
+  <rect x="170" y="70" width="30" height="134" rx="7" fill="#0B1F3A" stroke="#FFFFFF" stroke-width="10"/>
+</svg>
