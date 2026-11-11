@@ -1,0 +1,26 @@
+# Keeps the free Supabase project awake: free projects pause after about a week without activity.
+# Twice a week it calls can_post(), a public read-only function (visitors just get "false"); nothing is written.
+# The key is the publishable one already shipped in the website, public by design. Copied into the
+# i-tools Pages repo on every deploy (see website/README.md).
+name: Keep Supabase awake
+
+on:
+  schedule:
+    - cron: '17 6 * * 1,4'   # Monday and Thursday, 06:17 UTC
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Ping the database
+        env:
+          URL: https://txjxjsvooylhrmlyvlwe.supabase.co/rest/v1/rpc/can_post
+          KEY: sb_publishable_P2bsiMw4IpUHM2mvN6UBqA_vKJMxyiH
+        run: |
+          code=$(curl -s -o /dev/null -w '%{http_code}' -X POST "$URL" -H "apikey: $KEY" -H "Authorization: Bearer $KEY" -H 'Content-Type: application/json' -d '{}')
+          echo "Supabase answered $code"
+          test "$code" = 200
